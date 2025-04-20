@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Eye Model</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #CCCCFF;
+      font-family: sans-serif;
+    }
+
+    #humanDetected {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      display: none;
+      z-index: 10;
+    }
+
+    #video {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="humanDetected">👁️ Human Detected</div>
+  <video id="video" autoplay playsinline></video>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
